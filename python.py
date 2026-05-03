@@ -45,15 +45,14 @@ while True:
 
     aluno.append(novo_aluno)
     print("aluno cadastrado com sucesso!")
-     elif opcao == "2":
+  elif opcao == "2":
     if not aluno:
       print("Nenhum aluno cadastrado.")
     else:
       print("\n Lista de Alunos")
-      for aluno in aluno:
-        print(f"Nome: {aluno['nome']}, Matricula: {aluno['matricula']}, Curso: {aluno['curso']}, Idade: {aluno['idade']}, Nota: {aluno['nota']}")
+      for a in aluno:
+        print(f"Nome: {a['nome']}, Matricula: {a['matricula']}, Curso: {a['curso']}, Idade: {a['idade']}, Nota: {a['nota']}")
       print()
-
   elif opcao == "0":
     print("Cadastro encerrado.")
     break
